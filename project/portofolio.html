@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="assets/css/vendors/all.min.css" />
+		<link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css" />
+		<!-- build:js /assets/css/style.min.css -->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- /build -->
+		<title>Portofolio</title>
+	</head>
+	<body>
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg sticky-top bg-white">
+			<div class="container">
+				<a class="navbar-brand" href="#">
+					<img src="assets/imgs/logo.webp" alt="logo" />
+				</a>
+				<button
+					class="navbar-toggler border-0"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#sidebar"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<i class="fas fa-bars"></i>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a
+								class="nav-link text-sm fw-semibold text-uppercase px-3"
+								aria-current="page"
+								href="./index.html"
+								>Home</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link text-sm fw-semibold text-uppercase px-3"
+								href="./about.html"
+								>About</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link text-sm fw-semibold text-uppercase px-3"
+								href="./services.html"
+								>Services</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link text-sm fw-semibold text-uppercase px-3 active"
+								href="./portofolio.html"
+								>Portfolio</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link text-sm fw-semibold text-uppercase px-3"
+								href="./pricing.html"
+								>Pricing</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link text-sm fw-semibold text-uppercase px-3"
+								href="./blog.html"
+								>Blog</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link text-sm fw-semibold text-uppercase px-3"
+								href="./contact.html"
+								>Contact</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<section
+			id="sidebar"
+			class="offcanvas offcanvas-start bg-black bg-opacity-75"
+			tabindex="-1"
+			aria-labelledby="offcanvasExampleLabel"
+		>
+			<div class="offcanvas-body text-white">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a
+							class="nav-link text-sm fw-semibold text-uppercase px-3"
+							aria-current="page"
+							href="./index.html"
+							>Home</a
+						>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link text-sm fw-semibold text-uppercase px-3"
+							href="./about.html"
+							>About</a
+						>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link text-sm fw-semibold text-uppercase px-3"
+							href="./services.html"
+							>Services</a
+						>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link text-sm fw-semibold text-uppercase px-3 active"
+							href="./portofolio.html"
+							>Portfolio</a
+						>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link text-sm fw-semibold text-uppercase px-3"
+							href="./pricing.html"
+							>Pricing</a
+						>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link text-sm fw-semibold text-uppercase px-3"
+							href="./blog.html"
+							>Blog</a
+						>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link text-sm fw-semibold text-uppercase px-3"
+							href="./contact.html"
+							>Contact</a
+						>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- breadcrumb -->
+		<section class="bg-gradient section">
+			<div class="mb-2 text-center col-10 mx-auto">
+				<h2 class="breadcrumb-h2 text-white">Portofolio</h2>
+			</div>
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb justify-content-center text-white">
+					<li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+					<li class="breadcrumb-item" aria-current="page">Portofolio</li>
+				</ol>
+			</nav>
+		</section>
+
+		<!-- Our Latest Projects -->
+		<section id="latest-projects" class="section">
+			<div class="container vstack gap-5">
+				<!-- Title Section -->
+				<div class="text-center col-10 mx-auto">
+					<h2 class="section-title">our latest featured projects</h2>
+					<p class="text-black-50 text-sm">
+						Who are in extremely love with eco friendly system.
+					</p>
+				</div>
+
+				<!-- Projects Filter -->
+				<ul class="projects-list justify-content-center gap-4 d-none d-md-flex">
+					<li>
+						<button
+							class="text-uppercase transition-colors active"
+							data-filter="all"
+						>
+							all
+						</button>
+					</li>
+					<li>
+						<button
+							class="text-uppercase transition-colors"
+							data-filter="vector"
+						>
+							vector
+						</button>
+					</li>
+					<li>
+						<button
+							class="text-uppercase transition-colors"
+							data-filter="raster"
+						>
+							raster
+						</button>
+					</li>
+					<li>
+						<button
+							class="text-uppercase transition-colors"
+							data-filter="ui/ux"
+						>
+							ui/ux
+						</button>
+					</li>
+					<li>
+						<button
+							class="text-uppercase transition-colors"
+							data-filter="printing"
+						>
+							printing
+						</button>
+					</li>
+				</ul>
+
+				<!-- Projects Filter For Small Screens -->
+				<section class="dropdown d-md-none">
+					<button
+						class="dropdown-toggle w-100 border border-2 px-4 py-2"
+						type="button"
+						data-bs-toggle="dropdown"
+						aria-expanded="false"
+					>
+						Projects Filters
+					</button>
+					<ul class="dropdown-menu w-100">
+						<li>
+							<button class="dropdown-item text-uppercase" data-filter="all">
+								All
+							</button>
+						</li>
+						<li>
+							<button class="dropdown-item text-uppercase" data-filter="vector">
+								Vector
+							</button>
+						</li>
+						<li>
+							<button class="dropdown-item text-uppercase" data-filter="raster">
+								raster
+							</button>
+						</li>
+						<li>
+							<button class="dropdown-item text-uppercase" data-filter="ui/ux">
+								ui/ux
+							</button>
+						</li>
+						<li>
+							<button
+								class="dropdown-item text-uppercase"
+								data-filter="printing"
+							>
+								printing
+							</button>
+						</li>
+					</ul>
+				</section>
+
+				<!-- Projects -->
+				<section class="projects">
+					<div class="row row-cols-1 row-cols-sm-3 text-center">
+						<div class="col overflow-hidden transition-all" data-cat="vector">
+							<article class="proj project position-relative vstack gap-3">
+								<div class="project-hover">
+									<i class="fa-solid fa-binoculars"></i>
+								</div>
+								<img class="" src="assets/imgs/projects/01.webp" alt="" />
+								<div class="">
+									<h4 class="text-capitalize fs-6 fw-bold m-0">
+										<a href="#" class="transition-colors">2d vinyl design</a>
+									</h4>
+									<p class="text-capitalize text-sm text-black-50 m-0">
+										vector
+									</p>
+								</div>
+							</article>
+						</div>
+						<div class="col overflow-hidden" data-cat="raster">
+							<article class="proj project position-relative vstack gap-3">
+								<div class="project-hover">
+									<i class="fa-solid fa-binoculars"></i>
+								</div>
+								<img class="" src="assets/imgs/projects/02.webp" alt="" />
+								<div class="">
+									<h4 class="text-capitalize fs-6 fw-bold m-0">
+										<a href="#" class="transition-colors">2d vinyl design</a>
+									</h4>
+									<p class="text-capitalize text-sm text-black-50 m-0">
+										raster
+									</p>
+								</div>
+							</article>
+						</div>
+						<div class="col overflow-hidden transition-all" data-cat="raster">
+							<article class="proj project position-relative vstack gap-3">
+								<div class="project-hover">
+									<i class="fa-solid fa-binoculars"></i>
+								</div>
+								<img class="" src="assets/imgs/projects/03.webp" alt="" />
+								<div class="">
+									<h4 class="text-capitalize fs-6 fw-bold m-0">
+										<a href="#" class="transition-colors"
+											>2d vinyl design vinyl design
+										</a>
+									</h4>
+									<p class="text-capitalize text-sm text-black-50 m-0">
+										raster
+									</p>
+								</div>
+							</article>
+						</div>
+						<div class="col overflow-hidden transition-all" data-cat="ui/ux">
+							<article class="proj project position-relative vstack gap-3">
+								<div class="project-hover">
+									<i class="fa-solid fa-binoculars"></i>
+								</div>
+								<img class="" src="assets/imgs/projects/01.webp" alt="" />
+								<div class="">
+									<h4 class="text-capitalize fs-6 fw-bold m-0">
+										<a href="#" class="transition-colors">2d vinyl design</a>
+									</h4>
+									<p class="text-capitalize text-sm text-black-50 m-0">ui/ux</p>
+								</div>
+							</article>
+						</div>
+						<div class="col overflow-hidden transition-all" data-cat="printing">
+							<article class="proj project position-relative vstack gap-3">
+								<div class="project-hover">
+									<i class="fa-solid fa-binoculars"></i>
+								</div>
+								<img class="" src="assets/imgs/projects/02.webp" alt="" />
+								<div class="">
+									<h4 class="text-capitalize fs-6 fw-bold m-0">
+										<a href="#" class="transition-colors">2d vinyl design </a>
+									</h4>
+									<p class="text-capitalize text-sm text-black-50 m-0">
+										printing
+									</p>
+								</div>
+							</article>
+						</div>
+						<div class="col overflow-hidden transition-all" data-cat="printing">
+							<article class="proj project position-relative vstack gap-3">
+								<div class="project-hover">
+									<i class="fa-solid fa-binoculars"></i>
+								</div>
+								<img class="" src="assets/imgs/projects/03.webp" alt="" />
+								<div class="">
+									<h4 class="text-capitalize fs-6 fw-bold m-0">
+										<a href="#" class="transition-colors">2d vinyl design</a>
+									</h4>
+									<p class="text-capitalize text-sm text-black-50 m-0">
+										printing
+									</p>
+								</div>
+							</article>
+						</div>
+					</div>
+				</section>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="section bg-dark text-white">
+			<div class="container">
+				<div class="row gx-0 gy-4 gx-sm-4">
+					<div class="col-sm-6 col-xl-5">
+						<section class="about">
+							<h4 class="text-capitalize mb-4">about me</h4>
+							<p class="text-white-50 text-sm">
+								We have tested a number of registry fix and clean utilities and
+								present our top 3 list on our site for your convenience.
+							</p>
+							<p class="text-white-50 text-sm">
+								Copyright ©2022 All rights reserved | This template is made with
+								by <a href="#" class="text-primary">Colorlib</a>
+							</p>
+						</section>
+					</div>
+					<div class="col-sm-6 col-xl-5">
+						<h4 class="text-capitalize mb-4">news letter</h4>
+						<p class="text-white-50 text-sm">
+							We have tested a number of registry fix and clean utilities and
+							present our top 3 list on our site for your convenience.
+						</p>
+						<div class="input-group mb-3">
+							<input
+								type="text"
+								class="form-control ro"
+								placeholder="Enter Email Address"
+								aria-label="Username"
+								aria-describedby="basic-addon1"
+							/>
+							<button
+								class="input-group-text bg-secondary text-white border-0"
+								id="basic-addon1"
+							>
+								<i class="fas fa-arrow-right"></i>
+							</button>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xl-2">
+						<h4 class="text-capitalize mb-4">follow me</h4>
+						<p class="text-white-50 text-sm">let us be social</p>
+						<section class="social-links hstack gap-4">
+							<a href="#" class="transition-colors">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+							<a href="#" class="transition-colors">
+								<i class="fab fa-twitter"></i>
+							</a>
+							<a href="#" class="transition-colors">
+								<i class="fab fa-github"></i>
+							</a>
+							<a href="#" class="transition-colors">
+								<i class="fab fa-behance"></i>
+							</a>
+						</section>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- build:js /assets/js/main.min.js -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+		<script src="assets/js/vendors/all.min.js"></script>
+		<script src="assets/js/vendors/bootstrap.bundle.js"></script>
+		<script src="assets/js/main.js"></script>
+		<!-- /build -->
+	</body>
+</html>
